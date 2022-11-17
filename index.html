@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/87ed9c467d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logo-market.png" alt="Logo" /></a>
+            </div>
+            <nav class="navbar">
+                <!-- NavbarList     -->
+                <ul class="navbar-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#info-tipo">Info</a></li>
+                    <li><a href="#market">Market</a></li>
+                    <li><a href="./login.html">Ingresa</a></li>
+                </ul>
+                <!-- Carrito -->
+                <div class="cart-label">
+                    <img class="carrito" src="./assets/img/cart.svg" alt="Carrito" />
+                </div>
+                <!-- Menu  -->
+                <div class="menu-label">
+                    <img src="./assets/img/menu-toogle.svg" alt="" class="menu-icon" />
+                </div>
+
+                <div class="cart">
+                    <h2>Tus Pokemones</h2>
+                    <div class="carrito-container"></div>
+                    <div class="carrito-total">
+                        <p>Total:</p>
+                        <span class="total">total</span>
+                    </div>
+                    <button class="btn btn-comprar">Comprar</button>
+                    <button class="btn btn-borrar">Vaciar carrito</button>
+                </div>
+                <div class="overlay"></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-info">
+                <!-- <h1>Mercado de pokemon's</h1> -->
+                <div class="content">
+                    <h2 class="text_shadows">Mercado de pokemon's</h2>
+                </div>
+                <p>
+                    Compra tu Pokemon favorito y sumalo a tu colección! Hay como cinco millones para elegir!
+                </p>
+                <a href="#market">Compra ya!</a>
+            </div>
+            <div class="hero-img">
+                <img src="./assets/img/pikachu.png" alt="Pikachu" />
+            </div>
+        </section>
+        <!-- INFO-TIPO  -->
+        <section id="info-tipo">
+            <h2>Colecciona los distintos tipos de Pokemon</h2>
+            <div class="cards-tipo-container">
+                <div class="card-tipo">
+                    <img src="./assets/img/tipo-agua.png" alt="Tipo Agua" />
+                    <h3>AGUA</h3>
+                    <p>
+                        Se dice que es puro y que suele adaptarse a cualquier situación o condición climática, ya que el agua puede adoptar cualquier forma en cualquier momento
+                    </p>
+                </div>
+                <div class="card-tipo">
+                    <img src="./assets/img/tipo-fuego.png" alt="Tipo Agua" />
+                    <h3>FUEGO</h3>
+                    <p>
+                        Son apasionados y algunos de mal carácter (como el Charizard de Ash), viven en cuevas o zonas rocosas y muy áridas, y más probable aún cerca de volcanes activos
+                    </p>
+                </div>
+                <div class="card-tipo">
+                    <img src="./assets/img/tipo-trueno.png" alt="Tipo Agua" />
+                    <h3>TRUENO</h3>
+                    <p>
+                        Tienen hábitats variados, desde bosques, praderas, ciudades y centrales eléctricas. Almacenan electricidad estática en sus cuerpos y luego la liberan en forma de un ataque como Rayo por diferentes partes.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- MARKET  -->
+        <section id="market">
+            <h2>Market</h2>
+            <!-- TIPOS -->
+            <div class="tipos">
+                <button class="tipo active">Todas</button>
+                <button class="tipo" data-tipo="agua">Agua</button>
+                <button class="tipo" data-tipo="fuego">Fuego</button>
+                <button class="tipo" data-tipo="trueno">Trueno</button>
+                <button class="tipo" data-tipo="planta">Planta</button>
+                <button class="tipo" data-tipo="bicho">Bicho</button>
+            </div>
+            <!-- POKEMONES -->
+            <div class="pokemones-container">
+                <!-- POKEMONES A COMENTAR CUANDO CARGUE EL DATA  -->
+                <!-- <div class="pokemon-market">
+                    <img src="./assets/img/pokemones/Blastoise.png" alt="Blastoise" />
+                    <div class="pokemon-market-info">
+                        <div class="data">
+                            <h4>Blastoise</h4>
+                            <p>Precio: $100</p>
+                            <p>Tipo: <span>Agua</span></p>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-market">
+                    <img src="./assets/img/pokemones/Blastoise.png" alt="Blastoise" />
+                    <div class="pokemon-market-info">
+                        <div class="data">
+                            <h4>Blastoise</h4>
+                            <p>Precio: $100</p>
+                            <p>Tipo: <span>Agua</span></p>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-market">
+                    <img src="./assets/img/pokemones/Blastoise.png" alt="Blastoise" />
+                    <div class="pokemon-market-info">
+                        <div class="data">
+                            <h4>Blastoise</h4>
+                            <p>Precio: $100</p>
+                            <p>Tipo: <span>Agua</span></p>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-market">
+                    <img src="./assets/img/pokemones/Blastoise.png" alt="Blastoise" />
+                    <div class="pokemon-market-info">
+                        <div class="data">
+                            <h4>Blastoise</h4>
+                            <p>Precio: $100</p>
+                            <p>Tipo: <span>Agua</span></p>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-market">
+                    <img src="./assets/img/pokemones/Blastoise.png" alt="Blastoise" />
+                    <div class="pokemon-market-info">
+                        <div class="data">
+                            <h4>Blastoise</h4>
+                            <p>Precio: $100</p>
+                            <p>Tipo: <span>Agua</span></p>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-market">
+                    <img src="./assets/img/pokemones/Blastoise.png" alt="Blastoise" />
+                    <div class="pokemon-market-info">
+                        <div class="data">
+                            <h4>Blastoise</h4>
+                            <p>Precio: $100</p>
+                            <p>Tipo: <span>Agua</span></p>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- FIN DE POKEMONES -->
+            </div>
+            <button class="btn-ver-mas">Ver Más</button>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul class="footer-links">
+                <li><a href="#">Términos de Uso</a></li>
+                <li><a href="#">Trabajá con Nosotros</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </div>
+        <p>Rompiendo todas las leyes del <span>© (copyright)</span></p>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./data.js"></script>
+    <script src=" index.js "></script>
+</body>
+
+</html>

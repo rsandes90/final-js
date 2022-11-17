@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    /*Tamaño del header*/
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    color: var(--grey);
+    background: linear-gradient(45deg, #ffffff, var(--fondo)) fixed;
+}
+
+:root {
+    --yellow: #f7de82;
+    --nav-bar-list: #f3d154;
+    --fondo: #bebebe;
+    --grey-claro: #4b4b4b;
+    --grey: #333333;
+    --blue: #1259c3;
+    --borde: #dfdfdf;
+    --blue-item: #4583fb;
+    --blue-light: rgb(206, 214, 255);
+}
+
+
+/* Header */
+
+.header {
+    background-color: var(--yellow);
+}
+
+.header-container {
+    max-width: 1300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 80px 0px 50px;
+    gap: 30px;
+}
+
+.logo img {
+    width: 220px;
+}
+
+
+/* Fondo amarillo */
+
+.fondo-amarillo {
+    background-color: var(--yellow);
+    height: 150px;
+}
+
+
+/* registro */
+
+.registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.registro-container {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: -130px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 32px 64px 0px;
+}
+
+.title-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos-registro {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 40px;
+}
+
+.registro-item {
+    display: flex;
+    height: 45px;
+    gap: 30px;
+    align-items: center;
+}
+
+.registro-user-img {
+    /* background-image: url(./image/001-correo-electrnico.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-registro div:first-child .registro-user-img {
+    background-image: url(./image/001-correo-electrnico.png);
+}
+
+.datos-registro div:nth-child(2) .registro-user-img {
+    background-image: url(./image/002-usuario.png);
+}
+
+.datos-registro div:nth-child(3) .registro-user-img {
+    background-image: url(./image/003-iphone.png);
+}
+
+.datos-registro div:last-child .registro-user-img {
+    background-image: url(./image/contrasena.png);
+}
+
+.registro-user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.registro-input {
+    width: 300px;
+    height: 35px;
+    padding: 0px 20px;
+    color: var(--grey);
+    outline: none;
+    border: 1px solid var(--borde);
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.botones button {
+    height: 36px;
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: var(--blue-item);
+    color: white;
+    transition: all 0.2s ease-in-out;
+    margin: 0 auto;
+}
+
+.botones button:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .fondo-amarillo {
+        display: none;
+    }
+    .registro-container {
+        width: 100vw;
+        height: 700px;
+        position: static;
+        border-radius: 0px;
+    }
+    .footer {
+        border: 0.5px solid var(--borde);
+    }
+    .botones button {
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: -200px;
+}
+
+.footer p:first-child {
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.footer p:last-child {
+    font-size: 12px;
+    color: var(--grey-claro);
+}
